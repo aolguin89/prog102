@@ -8,9 +8,8 @@ payment = None
 # Opening the workers file
 with open('employees.csv') as file:
     for line in file:
-        if line != '':
-            print(line)
-
+        employee = line.split(",")
+        print(employee)
 
 # if hs < 40:
 #    payment = hs * rate
